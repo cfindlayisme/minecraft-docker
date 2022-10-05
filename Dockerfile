@@ -10,4 +10,6 @@ RUN \
 
 COPY start.sh /
 
+EXPOSE 25565
+
 CMD /start.sh
