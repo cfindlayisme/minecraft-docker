@@ -1,3 +1,5 @@
+# Author: Chuck Findlay <chuck@findlayis.me>
+# License: LGPL v3.0
 FROM alpine:3.16
 
 LABEL version="1.19.2"
