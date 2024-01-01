@@ -2,10 +2,10 @@
 # License: LGPL v3.0
 FROM alpine:3
 
-LABEL version="1.19.2"
+LABEL version="1.20.4"
 LABEL maintainer="chuck@findlayis.me"
 
-ADD https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar /minecraft.jar
+ADD https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar /minecraft.jar
 
 RUN \
     apk add openjdk17
