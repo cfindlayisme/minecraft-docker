@@ -1,6 +1,6 @@
 # Author: Chuck Findlay <chuck@findlayis.me>
 # License: LGPL v3.0
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 LABEL version="1.20.4"
 LABEL maintainer="chuck@findlayis.me"
