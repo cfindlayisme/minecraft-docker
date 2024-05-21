@@ -2,7 +2,9 @@ name: Build & Push Production Docker Image
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
 
 jobs:
 
@@ -47,8 +49,10 @@ jobs:
       
     - name: Push the Docker image
       run: docker push ${{ secrets.DOCKER_REPO }}:latest
+      if: github.ref == 'refs/heads/main'
     - name: Push the second Docker image
       run: docker push ${{ secrets.DOCKER_REPO2 }}:latest
+      if: github.ref == 'refs/heads/main'
 
     - name: Notify IRC Success
       run: |
